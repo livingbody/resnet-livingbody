@@ -1,4 +1,4 @@
-# 一、手把手教你复现ResNet50
+# 一、手把手教你复现ResNet
 * aistudio地址：[https://aistudio.baidu.com/aistudio/projectdetail/2282003](https://aistudio.baidu.com/aistudio/projectdetail/2282003)
 * github地址： [https://github.com/livingbody/resnet-livingbody.git](https://github.com/livingbody/resnet-livingbody.git)
 
@@ -317,11 +317,25 @@ diff: 2.6226044e-06
 ```
 
 
-# 五、注意事项
+# 五、其他
+>第一次复现论文（转模型）心里很慌啊，不知所云，幸亏有各位大佬在线，才一二一的弄完。
+## 1.注意事项
 
-特别要注意的是虽然有些方法名称是一样的，但是部分参数名称有变化，例如PaddlePaddle中的Conv2D中的bias_attr对应torch中的bias，PaddlePaddle中的ReLU对应torch中的ReLU(inplace=True)，inplace啥意思我也不知道，有人说这个会加速运算！
+* 代码方面，特别要注意的是虽然有些方法名称是一样的，但是部分参数名称有变化，例如PaddlePaddle中的Conv2D中的bias_attr对应torch中的bias，PaddlePaddle中的ReLU对应torch中的ReLU(inplace=True)，inplace（inplace就地运算，清空之前的，减小开销），有人说这个会加速运算！
+* 精度方面，精度差好像是随机的，每次运行都不一样，略有差异
 
+## 2.致谢Little Tomato Donkey、geoyee、友军的奸细的帮助
+* 特别感谢Little Tomato Donkey老师细心、耐心、爱心讲解以及花式样例
+* 特别感谢高睿-TowerNet、刘明康-仰世而来的七夕在线帮助
+* 基于PaddlePaddle复现UNet3+ [https://aistudio.baidu.com/aistudio/projectdetail/1555546?channelType=0&channel=0](https://aistudio.baidu.com/aistudio/projectdetail/1555546?channelType=0&channel=0)
+* 基于PaddlePaddle复现U²-Net [https://aistudio.baidu.com/aistudio/projectdetail/897158?channelType=0&channel=0](https://aistudio.baidu.com/aistudio/projectdetail/897158?channelType=0&channel=0)
 
-```python
+## 3.课表
+>天天没事看little tomato donkey老师满满邮件的 github 代码 push，真真的想死的心都有了，大神授课啊，希望大家抱团上啊啊啊！！！
 
-```
+>课程地址：[https://aistudio.baidu.com/aistudio/education/group/info/24681}(https://aistudio.baidu.com/aistudio/education/group/info/24681)
+
+课表：
+
+![](https://ai-studio-static-online.cdn.bcebos.com/74c552236c254f28b75e27878da253a4374b7df57c8c45f0b52616590cbd1be6)
+
